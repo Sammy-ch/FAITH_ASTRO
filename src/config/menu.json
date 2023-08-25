@@ -1,0 +1,68 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Posts",
+      "url": "/blog"
+    },
+    
+    {
+      "name": "Reports",
+      "url": "/reports"
+    },
+    {
+      "name": "Programs",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "AGACIRO",
+          "url": "/career"
+        },
+        {
+          "name": "AMATARA",
+          "url": "/career"
+        },
+        {
+          "name": "BAHO KIBONDO",
+          "url": "/career"
+        },
+        {
+          "name": "SASAGARA",
+          "url": "/career"
+        },
+        {
+          "name": "UMUGWIZA",
+          "url": "/career"
+        },
+        {
+          "name": "JIJUKA",
+          "url": "/career"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+
+  "footer": [
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ]
+}
+
