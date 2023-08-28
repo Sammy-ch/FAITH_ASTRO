@@ -12,18 +12,18 @@ const { copyright, location, email, phone, footer_description } = config.params;
 <footer class="footer bg-[#F1F1F1]">
   <div class="container">
     <div class="gx-5 row pb-10 pt-[52px]">
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div class="col-12 md:col-6 lg:col-3">
         <Logo />
         <p class="mt-6">
           {footer_description}
         </p>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div class="col-12 md:col-6 lg:col-3">
         <h6>Socials</h6>
 
-        <Social source={social} className="social-icons mt-4 lg:mt-6" />
+        <Social source={social} className="social-icons lg:mt-6" />
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div class="col-12  md:col-6 lg:col-3">
         <h6>Quick Links</h6>
         <ul>
           {
@@ -37,7 +37,7 @@ const { copyright, location, email, phone, footer_description } = config.params;
           }
         </ul>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div class="col-12 md:col-6 lg:col-3">
         <h6>Location & Contact</h6>
         <ul>
           <li class="mb-2">{location}</li>
@@ -55,7 +55,7 @@ const { copyright, location, email, phone, footer_description } = config.params;
   </div>
   <div class="container max-w-[1440px]">
     <div
-      class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center"
+      class="footer-copyright mx-auto border-t border-border pb-10 text-center"
     >
       <p class="content text-text" set:html={markdownify(copyright)} />
     </div>

@@ -4,6 +4,8 @@ html {
 
 body {
   @apply bg-body bg-[url('/images/body-bg.svg')] bg-repeat font-primary font-normal leading-relaxed text-text;
+  // Hidden overflow of the Header Duplicated Images
+  overflow-x: hidden
 }
 
 h1,
