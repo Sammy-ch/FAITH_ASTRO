@@ -14,18 +14,22 @@ key_features:
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
   feature_list:
     - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
+      logo: "public/images/icons/entrepreneur.png"
       title: 
       content: Women lack the knowledge of making their own income generating activities.
 
     - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
+      logo: "public/images/icons/income.png"
       title: 
       content: These women lack as well the financial capacity to start and increase the income generating activities.
 
     - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
+      logo: "public/images/icons/social.png"
       title: 
       content: The overworking of women, assigned by Burundian culture, hinders their socio-economic development, which can lead children and women to suffer certain forms of violence.
 
     - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
+      logo: "public/images/icons/competence.png"
       title: 
       content: The education given to the girl from the early age leads the women to live in the ignorance which is materialized by the lack of competence in the life.
 
