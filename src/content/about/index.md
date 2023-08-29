@@ -2,8 +2,8 @@
 title: "About"
 page_title: "About our company"
 buttons:
-  - label: Download The Theme
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
+  - label: Check out Our work
+    link: "/reports"
     enable: true
   - label: Learn More
     link: "#"
@@ -31,7 +31,7 @@ counter:
     
 # Gallery
 gallery:
-  title: We started with one single goal Empower entrepreneurs
+  title: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt.
   images:
     - "/images/about/gallery-img-1.png"
     - "/images/about/gallery-img-3.png"
@@ -39,10 +39,10 @@ gallery:
 
 ## our works
 features:
-  title: The six core work <br /> drive everything do
+  title: The six core work <br /> drive everything we do
   button:
-    label: Download The Theme
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
+    label: lorem 5
+    link: "#"
     enable: true
   features_list:
     - title: Accessibility

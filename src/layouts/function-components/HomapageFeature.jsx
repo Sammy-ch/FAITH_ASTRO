@@ -1,5 +1,3 @@
-import { humanize } from "@lib/utils/textConverter";
-import * as Icon from "react-feather";
 
 const HomapageFeature = ({ feature_list }) => {
   return (
