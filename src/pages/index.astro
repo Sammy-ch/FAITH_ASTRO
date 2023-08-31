@@ -6,12 +6,14 @@ import Testimonial from "@layouts/components/Testimonial.astro";
 import Service from "@layouts/components/Service.astro";
 import Cta from "@layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
+import SubscribeModal from "@shortcodes/subscribeModal";
 
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, key_features, service, testimonial } = homepage.data;
 ---
 
 <Base>
+  <SubscribeModal client:load />
   <!-- banner -->
   <Banner banner={banner} />
   <!-- key features -->
