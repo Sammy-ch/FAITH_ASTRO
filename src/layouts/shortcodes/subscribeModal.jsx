@@ -35,7 +35,7 @@ export default function App() {
                   Close
                 </Button>
                 <Button color="primary" onPress={onClose}>
-                  Submit
+                  Subscribe
                 </Button>
               </ModalFooter>
             </>
