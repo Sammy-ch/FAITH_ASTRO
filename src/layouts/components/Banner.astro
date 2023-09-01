@@ -12,14 +12,6 @@ const { title, button, image, content } = banner;
         <h1 class="banner-title" set:html={markdownify(title)} />
 
         <p class="mt-6 pb-6" set:html={markdownify(content)} />
-
-        <!-- {
-          button.enable && (
-            <a class="btn btn-white mt-8" href={button.link}>
-              {button.label}
-            </a>
-          )
-        } -->
       </div>
       <div class="lg:col-6">
         <Image
