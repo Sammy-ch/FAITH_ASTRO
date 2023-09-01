@@ -1,7 +1,7 @@
 ---
 banner:
   title: "Faith in Action is a non-profit organization that coaches and supports disadvantaged and at-risk women in Burundi"
-  content: "through a holistic community and family-based approach so that they become active, contributing members of their communities."
+  content: "through a holistic community and family-based approach so that they become active, contributing members of their communities.We believe that, to achieve the integral development of the community in general and families in particular, is to strengthen women in order to promote the economical resilience of the households and the protection of children through their role as pillars of the family."
   image: /images/banner.jpg
   button:
     label:
