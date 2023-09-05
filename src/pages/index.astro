@@ -14,18 +14,15 @@ const { banner, key_features, service, testimonial } = homepage.data;
 ---
 
 <Base>
-  <SubscribeModal client:load /> 
+  <SubscribeModal client:visible /> 
   <!-- banner -->
   <Banner banner={banner} />
-
   <!-- key features -->
   <KeyFeatures key_features={key_features} />
   <!-- service -->
   <Service service={service} />
   <!-- testimonial -->
-  <!-- <Testimonial testimonial={testimonial} /> -->
   <!-- call to action -->
-  <Cta />
+  <!-- <Cta /> -->
   <PartnerCarousel/>
-
 </Base>
