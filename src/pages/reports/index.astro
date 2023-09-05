@@ -6,6 +6,10 @@ import IntegrateMedia from "@layouts/function-components/IntegrateMedia";
 import { getSinglePage } from "@lib/contentParser.astro";
 import { getTaxonomy } from "@lib/taxonomyParser.astro";
 import { getEntryBySlug } from "astro:content";
+import PieChart from "@shortcodes/PieChart";
+import PieHalf from "@shortcodes/PieHalf";
+
+
 const integraionsIndex = await getEntryBySlug<any, string>(
   "integrations",
   "-index"
@@ -30,6 +34,8 @@ const page_data = {
       <PageHeader page_data={page_data} />
     </div>
   </section>
+  <PieChart client:load />
+  <PieHalf client:load />
   <IntegrateMedia
     client:load
     integrations={integrations}
