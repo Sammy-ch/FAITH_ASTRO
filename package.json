@@ -34,7 +34,8 @@
     "remark-collapse": "^0.1.2",
     "remark-toc": "^8.0.1",
     "shufflejs": "^6.1.0",
-    "swiper": "^8.4.7"
+    "swiper": "^8.4.7",
+    "vite": "^4.4.9"
   },
   "devDependencies": {
     "@astrojs/react": "^2.1.1",

@@ -1,4 +1,6 @@
 import image from "@astrojs/image";
+import storyblok from "@storyblok/astro"
+import { loadEnv } from 'vite';
 import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
@@ -9,6 +11,8 @@ import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 
+const env = loadEnv("",process.cwd(), 'STORYBLOK')
+
 // https://astro.build/config
 export default defineConfig({
   site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
@@ -17,6 +21,17 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap(),
+    storyblok({
+      accessToken: env.STORYBLOK_TOKEN,
+      components: {
+        blogPost: 'storyblok/BlogPost',
+        blogPostlist: 'storyblok/BlogPostList',
+        page: 'storyblok/Page',
+      },
+      apiOptions: {
+        region:'us'
+      }
+    }),
     tailwind({
       config: {
         applyBaseStyles: false,
