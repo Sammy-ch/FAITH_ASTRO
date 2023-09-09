@@ -1,7 +1,7 @@
 
 const HomapageFeature = ({ feature_list }) => {
   return (
-    <div className="key-feature-grid mt-10 grid grid-cols-2 gap-7 md:grid-cols-3 xl:grid-cols-4">
+    <div className="key-feature-grid text-center mt-10 grid grid-cols-2 gap-7 md:grid-cols-3 xl:grid-cols-4">
       {feature_list.map((item, i) => {
         return (
           <div

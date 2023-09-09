@@ -3,11 +3,10 @@ import { markdownify } from "@lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
 import HomapageFeature from "@layouts/function-components/HomapageFeature";
 const { key_features } = Astro.props;
-const { title, description, feature_list } = key_features;
-import { Button } from "@nextui-org/react";
+const { title, feature_list } = key_features;
 ---
 
-<section class="section key-feature relative">
+<section class="section bg-[url('/images/pb_banner.jpg')] key-feature relative">
   <Image
     class="absolute left-0 top-0 -z-[1] -translate-y-1/2"
     src="/images/feature-shape.png"
@@ -16,7 +15,7 @@ import { Button } from "@nextui-org/react";
     alt=""
   />
   <div class="container">
-    <div class="row justify-between text-center lg:text-start">
+    <div class="row justify-between text-center">
       <div>
         <h2 set:html={markdownify(title)} />
       </div>
