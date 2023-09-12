@@ -17,8 +17,8 @@ export async function getStaticPaths() {
     const authors = await useSanityClient().fetch(`*[_type == "post"]{author->{name}}`)
     
 
-    return posts.map((post) => {
-         return {
+return posts.map((post) => {
+    return {
       params: {
         slug: post.slug?.current || '',
       },

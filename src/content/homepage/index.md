@@ -41,7 +41,7 @@ key_features:
 service:
   homepage_tab:
     title: Entrepreneurship and Solidarity Funding
-    description: We train and coach vulnerable women how to leave their comfort zones in order to grow, generating the first capital through solidarity funding and emphasizing the necessity of money management. Additionally, Develop business strategy and selling points as well. On further journeys, we enable their connection to financial institutions in order to obtain further funds and revenue.
+    description: Vulnerable women are trained and coached on ways to step out of their comfort zone, generate their first capital through solidarity funding and participate in community development projects. Moreso, they are equipped with lessons such as creating business strategy, market research, finding sell points, money management and so on. On further journeys, we enable their connection to financial institutions in order to obtain additional funds and revenue.
     tab_list:
         - title: Habit building essential choose habit
           icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
@@ -52,11 +52,9 @@ service:
       desctiption:
       image: "/images/family_support.jpg"
       list:
-        - We facilitate birth and marriage registration
-        - child development and protection
-        - As well as professional skills training and support.
+        - Through family support; not only women benefit from the interventions but also their children and the whole family. Services offered are obtention of birth/marriage certificates; capacity building on child nutrition, development, and protection; and combating and avoiding gender-based violence.
     - title: LifeSkills
-      description: We facilitate in community health promotion, leadership skills, group therapy, peace building and conlit resolution.
+      description: Entails providing women with the fundamental and vital knowledge required to live their daily lives in harmony and abundance.  These women are highly sought after for their knowledge of leadership, nonviolent communication, group therapy, sexual and reproductive health, good parenting practices, environmental protection, hygiene, and community health.
       video:
         thumbnail: "/images/skills.jpg"
         video_id: "g3-VxLQO7do"

@@ -1,0 +1,29 @@
+---
+import { useSanityClient } from "@sanity/astro";
+import Base from "@layouts/Base.astro";
+import PortableText from "@components/PortableText.astro";
+
+
+export async function getStaticPaths() {
+    const programs = await useSanityClient().fetch(`*[_type == "programs"]`);
+
+    return programs.map((program) => {
+        return {
+            params: {
+                slug: program.slug?.current || '',
+            },
+            props: {...program}
+        };
+    });
+}
+
+const { slug } = Astro.params;
+const { title,body } = Astro.props;
+---
+
+<Base>
+    <section class="container text-center pb-14 pt-16">
+            <h1 class="pb-[3rem]">{title}</h1>
+            <PortableText portableText={body} />
+    </section>
+</Base>

@@ -9,7 +9,12 @@ const { homepage_tab, our_service } = service;
 
 <section class="section services">
   <div class="container">
+    <div class="text-center pb-16">
+      <h2 class="">Areas of Interventions/ Axes d'interventions </h2>
+      <span class="text-bolder">‘A single woman empowered is a generation empowered’</span>
+    </div>
     <HomepageTab client:load homepage_tab={homepage_tab} />
+
     {
       our_service.map((item: any, index: number) => (
         <div class="gx-5 row mt-12 items-center mb-10 lg:mt-0">

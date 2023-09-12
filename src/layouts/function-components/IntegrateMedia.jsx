@@ -14,27 +14,7 @@ const IntegrateMedia = ({ integrations, categories }) => {
         <div className="row justify-center">
           <div className="lg:col-10">
             <ul className="integration-tab filter-list flex flex-wrap items-center justify-center">
-              <li>
-                <span
-                  className={`filter-btn ${
-                    !tab ? "filter-btn-active" : undefined
-                  } btn btn-sm cursor-pointer`}
-                  onClick={() => setTab("")}
-                >
-                  All Categories
-                </span>
-              </li>
-              {categories.map((category, i) => (
-                <li key={`category-${i}`} onClick={() => setTab(category)}>
-                  <span
-                    className={`filter-btn ${
-                      tab === category ? "filter-btn-active" : undefined
-                    } btn btn-sm cursor-pointer`}
-                  >
-                    {humanize(category)}
-                  </span>
-                </li>
-              ))}
+              
             </ul>
           </div>
         </div>
@@ -66,11 +46,11 @@ const IntegrateMedia = ({ integrations, categories }) => {
                   />
                 </div>
 
-                <a
+                <a download  href={item.data.report}
                   className="group inline-flex items-center font-semibold text-dark hover:text-primary"
-                  href={`/integrations/${item.slug}`}
+                 
                 >
-                  View integration
+                 Download Report
                   <AiOutlineArrowRight className="ml-1.5 text-xl font-bold duration-300 group-hover:ml-3" />
                 </a>
               </div>
