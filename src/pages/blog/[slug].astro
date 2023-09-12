@@ -1,15 +1,78 @@
 ---
-export function getStaticPaths() {
-    return [
-        {params: {slug: 'hello_world'}},
-        {params: {slug: 'my-favorite-things'}},
-        {params: {slug: 'summertime'}},
-    ];
+import { useSanityClient } from "@sanity/astro";
+import Base from "@layouts/Base.astro";
+import { Image } from "@astrojs/image/components";
+import { urlForImage } from 'src/lib/utils/urlForImage.js';
+import PortableText from "@components/PortableText.astro";
+
+import {
+  FaRegCalendarAlt,
+  FaRegClock,
+  FaRegFolder,
+  FaRegUserCircle,
+} from "react-icons/fa/index.js";
+
+export async function getStaticPaths() {
+    const posts = await useSanityClient().fetch(`*[_type == "post"]`);
+    const authors = await useSanityClient().fetch(`*[_type == "post"]{author->{name}}`)
+    
+
+    return posts.map((post) => {
+         return {
+      params: {
+        slug: post.slug?.current || '',
+      },
+      props: { ...post },
+    };
+  });
 }
 
-const {slug} = Astro.params;
+
+const { slug } = Astro.params;
+const { title, mainImage, publishedAt, body } = Astro.props;
+
+
 
 ---
 
+<Base>
+<section class="section blog-single">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+            <Image
+            class="w-full rounded-xl"
+            src={urlForImage(mainImage).url()}
+            alt=""
+            width={920}
+            height={350}
+          />
+        </div>
+        <div class="mt-10 max-w-[810px] lg:col-9">
+          <h1 class="h2">
+            {title}
+          </h1>
+          <div class="mb-5 mt-6 flex items-center space-x-2">
+            <ul class="mb-4">
+              <li class="mr-4 inline-block">
+                <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
+                author
+              </li>
+  
+              <li class="mr-4 inline-block">
+                <FaRegCalendarAlt className={"mr-2 -mt-1 inline-block"} />
+                {publishedAt}
+              </li>
+              <li class="mr-4 inline-block">
+                <FaRegClock className={"mr-2 -mt-1 inline-block"} />
+                5 min
+              </li>
+            </ul>
+          </div>
+        </div>
+        <PortableText portableText={body} />
+      </div>
+    </div>
+  </section>
 
-<h1>A post about {slug}</h1>
+</Base>

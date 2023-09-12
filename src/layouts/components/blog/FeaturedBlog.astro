@@ -1,11 +1,16 @@
 ---
 import { Image } from "@astrojs/image/components";
-import config from "@config/config.json";
-import dateFormat from "@lib/utils/dateFormat";
-import readingTime from "@lib/utils/readingTime";
-import { humanize, plainify, slugify } from "@lib/utils/textConverter";
-const { summary_length } = config.settings;
-const { posts } = Astro.props;
+import { urlForImage } from 'src/lib/utils/urlForImage.js';
+
+
+import { useSanityClient } from "@sanity/astro";
+
+
+const posts = await useSanityClient().fetch(`*[_type == "post"]`);
+
+console.log(posts)
+
+
 ---
 
 <h2 class="h4 mb-4">Featured Posts</h2>
@@ -18,22 +23,17 @@ const { posts } = Astro.props;
             class="card-img"
             width={235}
             height={304}
-            src={post.data.image}
-            alt={post.data.title}
+            src={urlForImage(post.mainImage).url()}
+            alt={post.slug.current}
           />
           <div class="card-content">
             <div class="card-tags space-x-1">
-              {post.data.categories.map((category: any) => (
-                <a class="tag" href={`/categories/${slugify(category)}`}>
-                  {humanize(category)}
-                </a>
-              ))}
+              
             </div>
             <h3 class="h4 card-title">
-              <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+              <a href={`/blog/${post.slug.current}`}>{post.title}</a>
             </h3>
             <p class="mb-4 text-text">
-              {plainify(post.body?.slice(0, Number(summary_length)))}...
             </p>
             <div class="card-footer mt-6 flex space-x-4">
               <span class="inline-flex items-center text-xs text-[#666]">
@@ -50,7 +50,7 @@ const { posts } = Astro.props;
                     fill="#939393"
                   />
                 </svg>
-                {dateFormat(post.data.date)}
+              {post.publishedAt}
               </span>
               <span class="inline-flex items-center text-xs text-[#666]">
                 <svg
@@ -66,7 +66,7 @@ const { posts } = Astro.props;
                     fill="#939393"
                   />
                 </svg>
-                {readingTime(post.body)}
+                5 min
               </span>
             </div>
           </div>
