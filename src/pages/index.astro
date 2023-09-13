@@ -6,15 +6,19 @@ import Service from "@layouts/components/Service.astro";
 import { getEntryBySlug } from "astro:content";
 import SubscribeModal from "@shortcodes/subscribeModal";
 import PartnerCarousel from "@shortcodes/PartnerCarousel"
+import ParallaxImages from "@components/ParallaxScroll.jsx"
 
 const homepage = await getEntryBySlug("homepage", "index");
-const { banner, key_features, service, testimonial } = homepage.data;
+const { banner, key_features, service } = homepage.data;
 ---
 
 <Base>
-  <SubscribeModal client:visible /> 
+  <div class="hidden">
+    <SubscribeModal client:visible /> 
+  </div>
   <Banner banner={banner} />
   <KeyFeatures key_features={key_features} />
   <Service service={service} />
+  <ParallaxImages client:load/>
   <PartnerCarousel/>
 </Base>
