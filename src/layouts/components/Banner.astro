@@ -14,30 +14,17 @@ import { motion } from "framer-motion";
 
         <p class="mt-6 pb-6" set:html={markdownify(content)} />
       </div>
-      <!-- <div class="lg:col-6">
+       <div class="lg:col-6">
         <Image
-          class="w-full rounded-lg object-contain"
-          alt="banner"
-          src={image}
-          width={603}
-          height={396}
-        />
-        <Image
-          class="w-full relative bottom-[8rem] left-[20em] rounded-lg object-contain"
-          alt="banner"
-          src={image}
-          width={603}
-          height={396}
-        />
-      </div> -->
+        class=" h-[250px] w-[450px] bottom-[25rem] left-[75rem]"
+        alt="banner"
+        src={image}
+        width={550}
+        height={350}
+      />
+
+      </div> 
     </div>
   </div>
 
-  <Image
-    class="banner-shape absolute -top-28 right-0 -z-[1] w-full max-w-[30%]"
-    alt="banner"
-    src="/images/icons/feature-shape.svg"
-    width={496}
-    height={466}
-  />
 </section>
