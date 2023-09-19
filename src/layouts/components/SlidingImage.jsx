@@ -24,12 +24,12 @@ const slider1 = [
 
 const slider2 = [
     {
-        color: "#d4e3ec",
-        src: "segal.png"
-    },
-    {
         color: "#e5e0e1",
         src: "unicef.png"
+    },
+    {
+        color: "#d4e3ec",
+        src: "segal.png"
     },
     {
         color: "#d7d4cf",
