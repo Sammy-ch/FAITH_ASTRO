@@ -2,10 +2,13 @@ import EChartsReact from "echarts-for-react";
 import React from 'react'
 
 function PieChart() {
-    const eChartsOption = {
-        title: {
-            text: "53972 ménages ont été impactées par les interventions de Foi en Action dont :"
-        },
+  const eChartsOption = {
+        textStyle: {
+          color: "black",
+          fontSize: 13,
+          overflow: 'breakAll',
+          lineHeight: 20,
+          },
             legend: {
                 top: 'bottom',
             },
@@ -16,6 +19,7 @@ function PieChart() {
                 saveAsImage: { show: true }
               }
             },
+            
             series: [
               {
                 name: 'Nightingale Chart',
@@ -25,6 +29,13 @@ function PieChart() {
                 roseType: 'area',
                 itemStyle: {
                   borderRadius: 8
+                },
+                label: {
+                  show: false,
+                  formatter(param) {
+                    // correct the percentage
+                    return param.name + ' (' + param.percent * 2 + '%)';
+                  }
                 },
                 data: [
                   { value: 23178, name: '(23 178) Membres de la communauté ayant reçu un accompagnement socioéconomique grâce à la participation dans les SHG dont 97% ont déjà des AGR' },
@@ -39,10 +50,11 @@ function PieChart() {
   return (
       <div style={
           {
-              padding: "50px",
+              width:"100%",
               height:"650%"
           }
       }>
+            <h3 className="text-center">53972 ménages ont été impactées par les interventions de Foi en Action dont :</h3>
           <EChartsReact style={{
               width: "100%",
               height:"650%"
