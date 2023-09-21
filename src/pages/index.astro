@@ -21,6 +21,6 @@ const { banner, key_features, service } = homepage.data;
   <Banner banner={banner} />
   <KeyFeatures key_features={key_features} />
   <Service service={service} />
-  <ParallaxImages client:visible/>
+  <ParallaxImages client:load/>
   <SlidingImage client:load/>
 </Base>

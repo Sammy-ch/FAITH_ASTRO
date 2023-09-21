@@ -64,23 +64,25 @@ members:
   title: This is who we are
   description: Donec sollicitudin molestie malesda. Donec sollitudin mol estie ultricies ligula sed magna dictum
   member_list:
-    - name: Eleanor Pena
-      field: Co-founder & COO
+    - name: VIRGINIE NIYIZIGAMA
+      field: COFOUNDER, FAITH IN ACTION—National Coordinator
+      description: I am Faith in Action Co-founder and National coordinator who holds degrees in Electro-mechanics Engineering and Leadership and Administration. I worked as a teacher in High school for 10 years. Later I was employed in world relief organization for 7 years at different positions such as Administration and human resources and rehabilitation program manager. I got my extended experience in public administration for 7 years. I have rewarded certificates in trauma healing, peace building and conflict resolution by CORAT AFRICA. My passion has always been seeing equity among people, the right of everyone being respected without any discrimination.   
       image: "/images/users/user-1.png"
-    - name: Bukiakta Bansalo
-      field: Product Manager
+    - name: Acqueline NSHIMIRIMANA
+      field: PROGRAM MANAGER, Faith in Action
+      description: I am Faith in Action Co-founder and National coordinator who holds degrees in Electro-mechanics Engineering and Leadership and Administration. I worked as a teacher in High school for 10 years. Later I was employed in world relief organization for 7 years at different positions such as Administration and human resources and rehabilitation program manager. I got my extended experience in public administration for 7 years. I have rewarded certificates in trauma healing, peace building and conflict resolution by CORAT AFRICA. My passion has always been seeing equity among people, the right of everyone being respected without any discrimination.   
       image: "/images/users/user-2.png"
-    - name: Ortrin Okaster
-      field: Software Engineer
+    - name: Divin NIMPOZA
+      field: Monitoring Evaluation and Learning Manager
+      description: I am Faith in Action Co-founder and National coordinator who holds degrees in Electro-mechanics Engineering and Leadership and Administration. I worked as a teacher in High school for 10 years. Later I was employed in world relief organization for 7 years at different positions such as Administration and human resources and rehabilitation program manager. I got my extended experience in public administration for 7 years. I have rewarded certificates in trauma healing, peace building and conflict resolution by CORAT AFRICA. My passion has always been seeing equity among people, the right of everyone being respected without any discrimination.   
       image: "/images/users/user-3.png"
-    - name: Eleanor Pena
-      field: Co-founder & COO
+    - name: Désiré NZEYIMANA
+      field: ACCOUNTANT, Faith In Action
+      description: I am Faith in Action Co-founder and National coordinator who holds degrees in Electro-mechanics Engineering and Leadership and Administration. I worked as a teacher in High school for 10 years. Later I was employed in world relief organization for 7 years at different positions such as Administration and human resources and rehabilitation program manager. I got my extended experience in public administration for 7 years. I have rewarded certificates in trauma healing, peace building and conflict resolution by CORAT AFRICA. My passion has always been seeing equity among people, the right of everyone being respected without any discrimination.   
       image: "/images/users/user-1.png"
-    - name: Bukiakta Bansalo
-      field: Product Manager
+    - name: Alexi MANIRAMBONA
+      field: Finance and Accountant Manager
+      description: I am Faith in Action Co-founder and National coordinator who holds degrees in Electro-mechanics Engineering and Leadership and Administration. I worked as a teacher in High school for 10 years. Later I was employed in world relief organization for 7 years at different positions such as Administration and human resources and rehabilitation program manager. I got my extended experience in public administration for 7 years. I have rewarded certificates in trauma healing, peace building and conflict resolution by CORAT AFRICA. My passion has always been seeing equity among people, the right of everyone being respected without any discrimination.   
       image: "/images/users/user-2.png"
-    - name: Ortrin Okaster
-      field: Software Engineer
-      image: "/images/users/user-3.png"
 ---
 Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Lorem

@@ -1,8 +1,5 @@
 import {motion} from "framer-motion"
 
-
-
-
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,

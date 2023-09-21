@@ -2,18 +2,19 @@
 import { markdownify } from "@lib/utils/textConverter";
 const { banner } = Astro.props;
 const { title, content } = banner;
+import myImage from "public/images/bitmap.svg"
+import { Image } from "@astrojs/image/components";
 ---
 
-<section class="section banner bg-[url('/images/banner_image.svg')] bg-cover bg-no-repeat relative">
+<section class="section banner relative">
   <div class="container">
     <div class="row items-center justify-center ">
-      <div class="text-center w-[750px]">
-        <h1 class="banner-title" set:html={markdownify(title)} />
-
+      <div class="text-center text-black lg:col-12">
+        <h2 class="banner-title" set:html={markdownify(title)} />
         <p class="mt-6 pb-6" set:html={markdownify(content)} />
       </div>
-       <div class="lg:col-6">
-
+       <div class=" ">
+        <Image src={myImage} alt={"Banner Image"} />
       </div> 
     </div>
   </div>
