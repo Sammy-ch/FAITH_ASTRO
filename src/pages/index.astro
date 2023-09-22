@@ -5,10 +5,9 @@ import KeyFeatures from "@layouts/components/KeyFeatures.astro";
 import Service from "@layouts/components/Service.astro";
 import { getEntryBySlug } from "astro:content";
 import SubscribeModal from "@shortcodes/subscribeModal";
-import PartnerCarousel from "@shortcodes/PartnerCarousel"
 import ParallaxImages from "@components/ParallaxScroll.jsx"
 import SlidingImage from "@layouts/components/SlidingImage.jsx"
-
+import MissionVision from "@components/MissionVision.astro";
 
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, key_features, service } = homepage.data;
@@ -23,4 +22,5 @@ const { banner, key_features, service } = homepage.data;
   <Service service={service} />
   <ParallaxImages client:load/>
   <SlidingImage client:load/>
+  <MissionVision />
 </Base>
