@@ -20,7 +20,6 @@ const images = [
 ]
 
 export default function ParallaxImages() {
-  
   const gallery = useRef(null);
   const [dimension, setDimension] = useState({width:0, height:0});
 
