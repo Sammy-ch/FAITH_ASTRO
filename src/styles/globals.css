@@ -1,4 +1,29 @@
 body{
   margin: 0px;
-  background-color: #76C5F0;
+  background-image: linear-gradient(
+  315deg,
+  hsl(201deg 80% 70%) 72%,
+  hsl(199deg 72% 70%) 86%,
+  hsl(196deg 63% 70%) 92%,
+  hsl(193deg 55% 70%) 95%,
+  hsl(187deg 46% 70%) 97%,
+  hsl(179deg 38% 70%) 99%,
+  hsl(169deg 37% 72%) 100%,
+  hsl(157deg 37% 73%) 101%,
+  hsl(143deg 36% 75%) 101%,
+  hsl(126deg 36% 76%) 101%,
+  hsl(109deg 40% 76%) 102%,
+  hsl(97deg 47% 74%) 102%,
+  hsl(88deg 52% 73%) 102%,
+  hsl(80deg 57% 72%) 102%,
+  hsl(75deg 62% 71%) 101%,
+  hsl(70deg 67% 70%) 101%,
+  hsl(67deg 71% 68%) 101%,
+  hsl(64deg 75% 67%) 101%,
+  hsl(62deg 79% 65%) 101%,
+  hsl(60deg 82% 63%) 101%,
+  hsl(59deg 88% 61%) 100%,
+  hsl(58deg 95% 58%) 100%,
+  hsl(58deg 100% 50%) 100%
+);
 }

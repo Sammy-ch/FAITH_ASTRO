@@ -7,7 +7,7 @@ import OurMembers from "@components/about/OurMembers.astro";
 import Works from "@components/about/Works.astro";
 import Base from "@layouts/Base.astro";
 import { getEntryBySlug } from "astro:content";
-
+import "src/styles/globals.css"
 const about = await getEntryBySlug("about", "index");
 const { counter, gallery, features, members } = about.data;
 const page_data = {
@@ -24,7 +24,7 @@ const page_data = {
   
 >
   <Shape />
-  <section class="page-hero bg-[#76c5f0] py-16">
+  <section class="page-hero  py-16">
     <div class="container">
       <div class="page-hero-content mx-auto max-w-[768px] text-center">
         <PageHeader page_data={page_data} />
